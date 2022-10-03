@@ -1,36 +1,36 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "World Happiness Report",
-    "width": 800,
-    "height": 600,
-    "projection": {"type": "equalEarth"},
-    "data": {
-      "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/js/ne_110m_admin_0_countries.topojson.json",
-      "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-    },
-    "transform": [
-      {
-        "lookup": "properties.NAME",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2019.csv"
-          },
-          "key": "Country",
-          "fields": ["Happiness Score"]
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "World Happiness Report",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "equalEarth"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/js/ne_110m_admin_0_countries.topojson.json",
+    "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2019.csv"
+        },
+        "key": "Country",
+        "fields": ["Happiness Score"]
       }
-    ],
-    "mark": {"type": "geoshape"},
-    "encoding": {
-      "color": {
-        "title": "Happiness of the country",
-        "field": "Happiness Score",
-        "type": "quantitative",
-        "scale": {"type": "log"}
-      },
-      "tooltip": [
-        {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-        {"field": "Happiness Score", "type": "quantitative"}
-      ]
     }
+  ],
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "title": "Happiness of the country",
+      "field": "Happiness Score",
+      "type": "quantitative",
+      "scale": {"type": "log"}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Happiness Score", "type": "quantitative"}
+    ]
   }
+}
