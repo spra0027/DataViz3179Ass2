@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "World Happiness Report",
     "width": 800,
-    "height": 500,
+    "height": 600,
     "projection": {"type": "equalEarth"},
     "data": {
       "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/js/ne_110m_admin_0_countries.topojson.json",
@@ -24,7 +24,7 @@
     "encoding": {
       "color": {
         "title": "Happiness of the country",
-        "field": "Happiness Scoree",
+        "field": "Happiness Score",
         "type": "quantitative",
         "scale": {"type": "log"}
       },
