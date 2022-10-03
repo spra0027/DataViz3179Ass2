@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "COVID-19 Active Cases (10 Oct 2020)",
+    "title": "World Happiness Report",
     "width": 800,
     "height": 500,
     "data": {
@@ -29,7 +29,7 @@
                 "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2019.csv"
               },
               "key": "Country",
-              "fields": ["Active"]
+              "fields": ["Happiness Score"]
             }
           }
         ],
