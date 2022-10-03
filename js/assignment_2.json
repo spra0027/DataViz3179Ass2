@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2019.csv"
+          "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2018.csv"
         },
         "key": "Country",
         "fields": ["Happiness Score"]
