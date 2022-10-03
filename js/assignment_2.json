@@ -13,10 +13,23 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/2018.csv"
+          "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/all_years.csv"
         },
         "key": "Country",
-        "fields": ["Happiness Score"]
+        "fields": ["Score"]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "Year",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2019,
+        "step": 1,
+        "name": "Select the year:"
       }
     }
   ],
@@ -24,13 +37,13 @@
   "encoding": {
     "color": {
       "title": "Happiness of the country",
-      "field": "Happiness Score",
+      "field": "Score",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Happiness Score", "type": "quantitative"}
+      {"field": "Score", "type": "quantitative"}
     ]
   }
 }
