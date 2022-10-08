@@ -36,12 +36,20 @@
       "encoding": {"tooltip": {"field": "note"}}
     },
     {
+    "data": {
+    "url":
+    "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/js/oceans.topojson.json",
+    "format": {"type": "topojson", "feature": "oceans"}
+    },
+    "mark": {"type": "geoshape", "fill": "skyblue"}
+    },
+    {
       "transform": [
         {
           "lookup": "Country",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/GrantL0006/FIT3179/main/js/ne_110m_admin_0_countries.json",
+              "url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/js/ne_110m_admin_0_countries.topojson.json",
               "format": {
                 "type": "topojson",
                 "feature": "ne_110m_admin_0_countries"
