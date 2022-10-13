@@ -4,7 +4,7 @@
     "data": {"url": "https://raw.githubusercontent.com/spra0027/DataViz3179Ass2/main/data/all_years.csv"},
     "vconcat": [{
       "height": 250,
-      "width": 800,
+      "width": 600,
       "mark": "bar",
       "encoding": {
         "x": {
@@ -33,7 +33,7 @@
       }
     }, {
       "height": 250,
-      "width": 800,
+      "width": 600,
       "transform": [
         {
           "lookup": "properties",
