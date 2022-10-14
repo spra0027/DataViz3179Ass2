@@ -7,9 +7,9 @@
       "values": [
         {"category": "GDP", "value": 1.340},
         {"category": "Family", "value": 1.587},
-        {"category": "Life_Expectancy", "value": 0.986},
+        {"category": "Life Expectancy", "value": 0.986},
         {"category": "Freedom", "value": 0.596},
-        {"category": "Gov_Corruption", "value": 0.153},
+        {"category": "Trust", "value": 0.153},
         {"category": "Generosity", "value": 0.393}
       ]
     },

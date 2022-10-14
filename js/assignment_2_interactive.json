@@ -15,7 +15,7 @@
           "title": "Countries"
   
         },
-        "y": {"field": "Gov_Corruption", "type": "quantitative", "axis": {"grid": false}, "title": "Extent of contribution of corruption"},
+        "y": {"field": "Gov_Corruption", "type": "quantitative", "axis": {"grid": false}, "title": "Extent of contribution of trust"},
         "color": {
         "field": "Year",
         "type": "nominal",
@@ -26,7 +26,7 @@
         "tooltip":[
           {"field": "Country", "type": "nominal", "title": "Country"},
           {"field": "Year", "type": "nominal", "title": "Year"},
-          {"field": "Gov_Corruption", "type": "quantitative", "title": "Extent of corruption"}
+          {"field": "Gov_Corruption", "type": "quantitative", "title": "Extent of trust"}
   
         ]
   
@@ -66,12 +66,12 @@
           "field": "Gov_Corruption",
           "type": "quantitative",
           "axis": {"grid": false},
-          "title": "Extent of contribution of corruption"
+          "title": "Extent of contribution of trust"
         },
         "tooltip":[
           {"field": "Country", "type": "nominal", "title": "Country"},
           {"field": "Year", "type": "nominal", "title": "Year"},
-          {"field": "Gov_Corruption", "type": "quantitative", "title": "Extent of corruption"}
+          {"field": "Gov_Corruption", "type": "quantitative", "title": "Extent of trust"}
   
         ],
         "color": {
