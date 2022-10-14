@@ -38,7 +38,7 @@
     "encoding": {
       "color": {"field": "GDP_Capita", "title": "Extent of GDP/Capita" ,"type": "quantitative",
         "scale": {
-            "range": ["red", "green"]
+            "range": ["#e7ba52", "#1f77b4"]
         }
       },
       "x": {"field": "Score", "type": "quantitative", "title": "Happiness Score", "axis": {"grid": false}},
