@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple pie chart with labels.",
+    "width": 320,
+    "height": 300,
+    "data": {
+      "values": [
+        {"category": "GDP", "value": 0.306},
+        {"category": "Family", "value": 0.575},
+        {"category": "Life_Expectancy", "value": 	0.295},
+        {"category": "Freedom", "value": 	0.010},
+        {"category": "Gov_Corruption", "value": 0.202},
+        {"category": "Generosity", "value": 0.091}
+      ]
+    },
+    "encoding": {
+      "theta": {"field": "value", "type": "quantitative", "stack": true},
+      "color": {"field": "category", "type": "nominal", "legend": null}
+    },
+    "layer": [{
+      "mark": {"type": "arc", "outerRadius": 80, "innerRadius": 50}
+    },
+    { "mark": {"type": "text", "radius": 0, "text": "South Sudan", "color":"black"}}
+    , {
+      "mark": {"type": "text", "radius": 100},
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative"}
+      }
+    }]
+  }
+  
+  
